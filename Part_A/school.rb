@@ -25,4 +25,8 @@ class Student
   end
 
 
+  def talk()
+    return "I can talk"
+  end
+
 end

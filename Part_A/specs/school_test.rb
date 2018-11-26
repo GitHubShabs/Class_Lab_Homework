@@ -27,5 +27,9 @@ class TestCodeClan < MiniTest::Test
     assert_equal('E27', student.cohort)
   end
 
+  def test_talk
+    student = Student.new('Joe', 'E27')
+    assert_equal('I can talk', student.talk)
+  end
 
 end
