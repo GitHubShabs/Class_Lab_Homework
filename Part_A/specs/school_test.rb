@@ -21,6 +21,11 @@ class TestCodeClan < MiniTest::Test
     assert_equal('Dave', student.student_name)
   end
 
+  def test_cohort
+    student = Student.new('Jill', 'E25')
+    student.set_cohort('E27')
+    assert_equal('E27', student.cohort)
+  end
 
 
 end
